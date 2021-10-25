@@ -9,7 +9,7 @@ warnings.filterwarnings("ignore", category=DeprecationWarning)
 client_local = MongoClient(port=27017)
 database_local = client_local.bellamassa
 collection_documents = database_local.pedidos.find()
-collection_destination = database_local.pedidoscs
+collection_destination = database_local.pedidocs
 documents = []
 
 print("Iniciando transferencia de banco de dados")
